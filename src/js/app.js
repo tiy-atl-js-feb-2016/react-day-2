@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Octo from './octo';
 import Ipsum from './ipsum';
 
@@ -21,6 +21,10 @@ const cats = [
 ]
 
 export default class App extends Component {
+
+  static propTypes = {
+    onSelect: PropTypes.func.isRequired
+  }
 
   render() {
     return (

@@ -9,6 +9,10 @@ var defaultText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 
 export default class Ipsum extends React.Component {
 
+  static propTypes = {
+    text: React.PropTypes.string
+  }
+
   render() {
 
     var text = this.props.text ? this.props.text : defaultText; 

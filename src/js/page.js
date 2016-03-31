@@ -2,6 +2,12 @@ import React from 'react';
 import Octo from './octo';
 
 export default class Page extends React.Component {
+
+  static propTypes = {
+    onSelect: React.PropTypes.func.isRequired,
+    octo: React.PropTypes.string.isRequired
+  }
+
   render() {
     return (
       <div className="flower">
